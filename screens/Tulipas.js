@@ -2,13 +2,18 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-export default function AnaJulia() {
+export default function Tulipas() {
     const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>AnaJulia</Text>
-            <TouchableOpacity onPress={() => navigation.navigate("Lirios")}>
+            <Text style={styles.title}>Tulipas</Text>
+            <TouchableOpacity onPress={() => navigation.navigate("Luiza")}>
+            <Image
+                    style={styles.image}
+                    source={{uri:"https://br.pinterest.com/pin/1759287347823574/"
+                        }}
+                    />
                 <Text style={styles.text}>Minha página Home</Text>
             </TouchableOpacity>
         </View>

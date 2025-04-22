@@ -7,8 +7,8 @@ export default function AnaJulia() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>AnaJulia</Text>
-            <TouchableOpacity onPress={() => navigation.navigate("Lirios")}>
+            <Text style={styles.title}>Luiza</Text>
+            <TouchableOpacity onPress={() => navigation.navigate("Tulipas")}>
                 <Text style={styles.text}>Minha página Home</Text>
             </TouchableOpacity>
         </View>

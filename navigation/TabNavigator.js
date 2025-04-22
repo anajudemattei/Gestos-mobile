@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/AnaJulia';
+import Pag3 from "../screens/Luiza"
 import { Ionicons } from '@expo/vector-icons'; 
 
 const Tab = createBottomTabNavigator();
@@ -8,7 +9,7 @@ const Tab = createBottomTabNavigator();
 export default function TabNavigator() {
     return (
         <Tab.Navigator initialRouteName="Home" screenOptions={{
-            headerShown: true,
+            headerShown: false,
             headerTitle: 'Página Inicial',
             headerStyle: { backgroundColor: '#e1a1ae',
                 height: 100,
@@ -44,6 +45,15 @@ export default function TabNavigator() {
                     ),
                 }}
             />
-        </Tab.Navigator>
+            <Tab.Screen 
+                name="TRalalala" 
+                component={Pag3} 
+                options={{
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="heart" color={color} size={size} />
+                    ),
+                }}
+            />
+            </Tab.Navigator>
     );
 }
